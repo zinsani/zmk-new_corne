@@ -245,6 +245,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [23, 24]
-  k: {t: '$$mdi:keyboard-esc$$', s: '`'}
