@@ -182,7 +182,7 @@ layers:
   - RGB EFF
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
-  - $$mdi:volume-off$$
+  - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB SPD
   - RGB SPI
@@ -213,13 +213,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-high$$
   - $$mdi:brightness-5$$
+  - '&soft_off'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:bluetooth-off$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - RGB SPI
   - RGB SAI
   - RGB HUI
   - RGB BRI
@@ -228,12 +228,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-low$$
   - $$mdi:brightness-7$$
+  - EP TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - BT CLR ALL
   - $$mdi:progress-download$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $$mdi:progress-download$$
+  - RGB SPD
   - RGB SAD
   - RGB HUD
   - RGB BRD
