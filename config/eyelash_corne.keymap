@@ -59,10 +59,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                &kp Q  &kp W  &kp E      &kp R  &kp T                                          &mmv MOVE_UP                     &kp Y                &kp U  &kp I            &kp O    &kp P     &kp BSPC
-&mt LEFT_ALT CAPSLOCK  &kp A  &kp S  &kp D      &kp F  &kp G                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H                &kp J  &kp K            &kp L    &kp SEMI  &mt RIGHT_ALT SQT
-&kp LEFT_SHIFT         &kp Z  &kp X  &kp C      &kp V  &kp B                &tog 1                    &mmv MOVE_DOWN                   &kp N                &kp M  &kp COMMA        &kp DOT  &kp FSLH  &mt LCTRL ENTER
-                                     &kp LCTRL  &mo 2  &mt LEFT_GUI ESCAPE                                                             &mt RIGHT_GUI SPACE  &mo 3  &kp RIGHT_SHIFT
+&kp TAB                &kp Q  &kp W  &kp E      &kp R         &kp T                                   &mmv MOVE_UP                     &kp Y        &kp U                  &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_ALT CAPSLOCK  &kp A  &kp S  &kp D      &kp F         &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &kp J                  &kp K      &kp L    &kp SEMI  &mt RIGHT_ALT SQT
+&kp LEFT_SHIFT         &kp Z  &kp X  &kp C      &kp V         &kp B         &tog 1                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA  &kp DOT  &kp FSLH  &mt LCTRL ENTER
+                                     &kp LCTRL  &kp LEFT_GUI  &lt 2 ESCAPE                                                             &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -70,10 +70,10 @@
 
         colemak {
             bindings = <
-&kp TAB                &kp Q  &kp W  &kp F      &kp P  &kp G                                          &mmv MOVE_UP                     &kp J                &kp L  &kp U            &kp Y       &kp SEMICOLON  &kp BACKSPACE
-&mt LEFT_ALT CAPSLOCK  &kp A  &kp S  &kp R      &kp T  &kp D                          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H                &kp N  &kp E            &kp I       &kp O          &mt RIGHT_ALT SQT
-&kp LEFT_SHIFT         &kp Z  &kp X  &kp C      &kp V  &kp B                &tog 1                    &mmv MOVE_DOWN                   &kp K                &kp M  &kp COMMA        &kp PERIOD  &kp SLASH      &mt LCTRL ENTER
-                                     &kp LCTRL  &mo 2  &mt LEFT_GUI ESCAPE                                                             &mt RIGHT_GUI SPACE  &mo 3  &kp RIGHT_SHIFT
+&trans  &kp Q  &kp W  &kp F   &kp P   &kp G                     &trans          &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
+&trans  &kp A  &kp S  &kp R   &kp T   &kp D             &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &trans            &trans          &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
+                      &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
