@@ -47,8 +47,8 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   colemak:
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
