@@ -57,11 +57,13 @@
         esc_a_to_caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <14 15>;
+            layers = <0 1>;
         };
 
         qw_to_tab {
             bindings = <&mo 5>;
             key-positions = <45 46>;
+            layers = <0 1>;
         };
     };
 
