@@ -297,5 +297,7 @@ layers:
 combos:
 - p: [14, 15]
   k: $$mdi:apple-keyboard-caps$$
+  l: [QWERTY, COLEMAK]
 - p: [45, 46]
   k: FUNCTION_BLUETOOTH
+  l: [QWERTY, COLEMAK]
