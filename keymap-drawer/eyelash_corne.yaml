@@ -148,7 +148,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
-  - {t: COLEMAK, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -166,7 +166,7 @@ layers:
   - Ins
   - HOME
   - PgUp
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -177,13 +177,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:backspace-reverse-outline$$
   - END
   - PgDn
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,8 +193,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-command$$'}
-  - INS
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -295,9 +295,17 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [14, 15]
-  k: $$mdi:apple-keyboard-caps$$
+- p: [16, 17]
+  k: $$mdi:keyboard-esc$$
   l: [QWERTY, COLEMAK]
 - p: [45, 46]
   k: FUNCTION_BLUETOOTH
   l: [QWERTY, COLEMAK]
+- p: [23, 24]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [37, 38]
+  k: $$mdi:apple-keyboard-caps$$
+- p: [1, 2]
+  k: $$mdi:keyboard-tab$$
+- p: [10, 11]
+  k: {t: '$$mdi:backspace$$', type: backspace}
