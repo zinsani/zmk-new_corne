@@ -54,16 +54,42 @@
     combos {
         compatible = "zmk,combos";
 
-        esc_a_to_caps {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <14 15>;
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 17>;
             layers = <0 1>;
+            timeout-ms = <30>;
         };
 
-        qw_to_tab {
+        bluetooth_fn {
             bindings = <&mo 5>;
             key-positions = <45 46>;
             layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <23 24>;
+            timeout-ms = <30>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <37 38>;
+            timeout-ms = <30>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+            timeout-ms = <30>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 11>;
+            timeout-ms = <30>;
         };
     };
 
@@ -109,10 +135,10 @@
         raise_layer {
             display-name = "NUMBER";
             bindings = <
-&tog 1  &kp N1        &kp N2      &kp N3    &kp N4               &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans  &kp CAPSLOCK  &kp INSERT  &kp HOME  &kp PAGE_UP          &trans                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans        &kp DELETE  &kp END   &kp PAGE_DOWN        &trans   &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &trans    &trans    &trans  &trans     &trans  &trans
-                                  &trans    &mt LEFT_GUI DELETE  &kp INS                                                                       &trans    &trans    &trans
+&trans  &kp N1        &kp N2      &kp N3    &kp N4         &kp N5                                      &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &kp CAPSLOCK  &kp INSERT  &kp HOME  &kp PAGE_UP    &none                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &none         &kp DELETE  &kp END   &kp PAGE_DOWN  &none   &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &none     &none     &trans  &trans     &trans  &trans
+                                  &trans    &trans         &trans                                                                       &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
