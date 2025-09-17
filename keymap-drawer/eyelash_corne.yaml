@@ -65,8 +65,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - A
-  - S
   - R
+  - S
   - T
   - D
   - {t: '$$mdi:transfer$$', type: trans}
