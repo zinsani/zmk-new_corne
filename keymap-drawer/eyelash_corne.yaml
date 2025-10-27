@@ -177,7 +177,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - GLOBE
+  - AC NEXT KEYBOARD LAYOUT SELECT
   - $$mdi:backspace-reverse-outline$$
   - END
   - PgDn
