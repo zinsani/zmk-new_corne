@@ -28,14 +28,14 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: '$$mdi:apple-keyboard-option$$', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
   - V
   - B
-  - {t: COLEMAK, h: toggle}
+  - AL KEYBOARD LAYOUT
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - M
@@ -113,7 +113,7 @@ layers:
   - )
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
-  - AC ZOOM IN
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
@@ -128,8 +128,8 @@ layers:
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AC ZOOM OUT
-  - GLOBE
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - AC SEARCH
   - AC DESKTOP SHOW ALL WINDOWS
   - AC DESKTOP SHOW ALL APPLICATIONS
@@ -166,7 +166,7 @@ layers:
   - Ins
   - HOME
   - PgUp
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PRINTSCREEN
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -177,7 +177,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - GLOBE
   - $$mdi:backspace-reverse-outline$$
   - END
   - PgDn
@@ -185,7 +185,7 @@ layers:
   - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: COLEMAK, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -201,7 +201,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
