@@ -135,10 +135,10 @@
         raise_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1        &kp N2      &kp N3    &kp N4         &kp N5                                               &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans  &kp CAPSLOCK  &kp INSERT  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &kp GLOBE     &kp DELETE  &kp END   &kp PAGE_DOWN  &none            &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &none     &tog 1    &trans  &trans     &trans  &trans
-                                  &trans    &trans         &trans                                                                                &trans    &trans    &trans
+&trans  &kp N1                                &kp N2      &kp N3    &kp N4         &kp N5                                               &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &kp CAPSLOCK                          &kp INSERT  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp DELETE  &kp END   &kp PAGE_DOWN  &none            &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &none     &tog 1    &trans  &trans     &trans  &trans
+                                                          &trans    &trans         &trans                                                                                &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
