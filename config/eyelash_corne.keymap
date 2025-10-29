@@ -103,7 +103,7 @@
         lower_layer {
             display-name = "NUMBER_SYMBOL";
             bindings = <
-&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                               &mmv MOVE_UP                     &kp CARET         &kp AMPS           &kp ASTRK     &kp LPAR      &kp RPAR      &kp TILDE
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                               &mmv MOVE_UP                     &kp CARET         &kp AMPS           &kp ASTRK     &kp LPAR      &kp RPAR      &kp BACKSLASH
 &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans     &none         &none         &kp MINUS     &kp EQUAL     &none         &trans                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans        &trans        &trans
                                        &trans        &trans        &trans                                                                   &trans            &trans             &trans
