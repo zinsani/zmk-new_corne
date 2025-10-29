@@ -66,8 +66,8 @@
             layers = <0 1>;
         };
 
-        caps {
-            bindings = <&kp CAPSLOCK>;
+        toggle1 {
+            bindings = <&tog 1>;
             key-positions = <37 38>;
             timeout-ms = <30>;
         };
@@ -79,10 +79,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E      &kp R         &kp T                                              &mmv MOVE_UP                     &kp Y  &kp U      &kp I            &kp O    &kp P     &kp BSPC
-&mt LEFT_ALT ESCAPE  &kp A  &kp S  &kp D      &kp F         &kp G                              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H  &kp J      &kp K            &kp L    &kp SEMI  &mt LEFT_ALT SINGLE_QUOTE
-&kp LEFT_SHIFT       &kp Z  &kp X  &kp C      &kp V         &kp B  &kp C_AL_KEYBOARD_LAYOUT                    &mmv MOVE_DOWN                   &kp N  &kp M      &kp COMMA        &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
-                                   &kp LCTRL  &kp LEFT_GUI  &mo 2                                                                               &mo 3  &kp SPACE  &kp RIGHT_SHIFT
+&kp TAB              &kp Q  &kp W  &kp E      &kp R         &kp T                                                                &mmv MOVE_UP                     &kp Y  &kp U      &kp I            &kp O    &kp P     &kp BSPC
+&mt LEFT_ALT ESCAPE  &kp A  &kp S  &kp D      &kp F         &kp G                                                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H  &kp J      &kp K            &kp L    &kp SEMI  &mt LEFT_ALT SINGLE_QUOTE
+&kp LEFT_SHIFT       &kp Z  &kp X  &kp C      &kp V         &kp B  &kp LC(C_AC_DESKTOP_SHOW_ALL_APPLICATIONS)                    &mmv MOVE_DOWN                   &kp N  &kp M      &kp COMMA        &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
+                                   &kp LCTRL  &kp LEFT_GUI  &mo 2                                                                                                 &mo 3  &kp SPACE  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -115,10 +115,10 @@
         raise_layer {
             display-name = "FUNC_NAVI";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3     &kp F4        &kp F5                                       &mmv MOVE_UP                     &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp INSERT  &kp DELETE
-&trans  &kp F6   &kp F7   &kp F8     &kp F9        &kp F10                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &trans      &trans
-&trans  &kp F11  &kp F12  &kp GLOBE  &kp CAPSLOCK  &tog 1   &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &kp K_PREV  &kp C_VOL_DN   &kp C_VOLUME_UP  &kp K_NEXT  &kp K_MUTE  &trans
-                          &trans     &trans        &trans                                                                        &trans      &trans         &trans
+&trans  &kp F1   &kp F2   &kp F3     &kp F4        &kp F5                                               &mmv MOVE_UP                     &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp INSERT  &kp DELETE
+&trans  &kp F6   &kp F7   &kp F8     &kp F9        &kp F10                              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &trans      &trans
+&trans  &kp F11  &kp F12  &kp GLOBE  &kp CAPSLOCK  &kp C_AC_SEARCH  &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &kp K_PREV  &kp C_VOL_DN   &kp C_VOLUME_UP  &kp K_NEXT  &kp K_MUTE  &trans
+                          &trans     &trans        &trans                                                                                &trans      &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
