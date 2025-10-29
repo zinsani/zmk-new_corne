@@ -5,9 +5,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -54,41 +52,23 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <16 17>;
-            layers = <0 1>;
-            timeout-ms = <30>;
-        };
-
-        bluetooth_fn {
-            bindings = <&mo 5>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <45 46>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
+        esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <23 24>;
             timeout-ms = <30>;
+            layers = <0 1>;
         };
 
         caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <37 38>;
-            timeout-ms = <30>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <1 2>;
-            timeout-ms = <30>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 11>;
             timeout-ms = <30>;
         };
     };
@@ -121,24 +101,24 @@
         };
 
         lower_layer {
-            display-name = "SYMBOL";
+            display-name = "NUMBER_SYMBOL";
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH         &kp DLLR                           &kp PRCNT                                                         &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans    &trans  &mkp LCLK        &mkp RCLK                          &mkp MCLK                                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
-&trans     &trans    &trans  &kp C_AC_SEARCH  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
-                             &trans           &trans                             &trans                                                                                             &trans     &trans     &trans
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                               &mmv MOVE_UP                     &kp CARET         &kp AMPS           &kp ASTRK     &kp LPAR      &kp RPAR      &kp TILDE
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans     &none         &none         &kp MINUS     &kp EQUAL     &none         &trans                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans        &trans        &trans
+                                       &trans        &trans        &trans                                                                   &trans            &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         raise_layer {
-            display-name = "NUMBER";
+            display-name = "FUNC_NAVI";
             bindings = <
-&trans  &kp N1                                &kp N2      &kp N3    &kp N4         &kp N5                                               &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans  &kp CAPSLOCK                          &kp INSERT  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp DELETE  &kp END   &kp PAGE_DOWN  &none            &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &none     &tog 1    &trans  &trans     &trans  &trans
-                                                          &trans    &trans         &trans                                                                                &trans    &trans    &trans
+&trans  &kp F1   &kp F2   &kp F3     &kp F4        &kp F5                                       &mmv MOVE_UP                     &kp HOME    &kp PAGE_UP   &kp PAGE_DOWN    &kp END     &kp INSERT  &kp DELETE
+&trans  &kp F6   &kp F7   &kp F8     &kp F9        &kp F10                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT    &kp DOWN      &kp UP           &kp RIGHT   &trans      &trans
+&trans  &kp F11  &kp F12  &kp GLOBE  &kp CAPSLOCK  &tog 1   &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &kp K_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_NEXT  &kp K_MUTE  &trans
+                          &trans     &trans        &trans                                                                        &trans      &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -147,24 +127,13 @@
         misc {
             display-name = "MISC";
             bindings = <
-&none  &none            &none                 &none              &trans  &none                                      &mmv MOVE_UP                     &none            &none            &none            &none            &none            &none
-&none  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &soft_off          &none   &sys_reset                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_ON   &rgb_ug RGB_EFF
-&none  &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC  &ext_power EP_TOG  &none   &bootloader  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_OFF  &rgb_ug RGB_EFR
-                                              &none              &none   &none                                                                       &none            &none            &none
+&none  &none         &none         &none         &none         &none                                       &mmv MOVE_UP                     &none            &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none            &none            &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_ON   &none
+&none  &none         &none         &none         &bt BT_CLR    &bootloader   &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_OFF  &none
+                                   &none         &none         &none                                                                        &none            &none            &none
             >;
 
             sensor-bindings = <&rgb_encoder>;
-        };
-
-        fn_bt {
-            bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                            &trans          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4              &trans  &trans  &trans  &none   &none   &none   &none   &none    &mt RIGHT_ALT F12
-&trans  &out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR    &bt BT_CLR_ALL  &trans            &trans          &none   &none   &none   &none   &none    &trans
-                                    &trans        &trans        &none                                             &none   &none   &trans
-            >;
-
-            label = "FUNCTION_BLUETOOTH";
         };
     };
 
