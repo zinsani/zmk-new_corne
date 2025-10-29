@@ -70,6 +70,7 @@
             bindings = <&tog 1>;
             key-positions = <37 38>;
             timeout-ms = <30>;
+            layers = <0 1>;
         };
     };
 
