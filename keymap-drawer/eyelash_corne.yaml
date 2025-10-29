@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - AL KEYBOARD LAYOUT
+  - Ctl+AC DESKTOP SHOW ALL APPLICATIONS
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - M
@@ -181,7 +181,7 @@ layers:
   - F12
   - GLOBE
   - $$mdi:apple-keyboard-caps$$
-  - {t: COLEMAK, h: toggle}
+  - AC SEARCH
   - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PREV
@@ -253,4 +253,4 @@ combos:
   k: $$mdi:keyboard-esc$$
   l: [QWERTY, COLEMAK]
 - p: [37, 38]
-  k: $$mdi:apple-keyboard-caps$$
+  k: {t: COLEMAK, h: toggle}
