@@ -111,7 +111,7 @@ layers:
   - '*'
   - (
   - )
-  - '~'
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - '2'
