@@ -254,3 +254,4 @@ combos:
   l: [QWERTY, COLEMAK]
 - p: [37, 38]
   k: {t: COLEMAK, h: toggle}
+  l: [QWERTY, COLEMAK]
