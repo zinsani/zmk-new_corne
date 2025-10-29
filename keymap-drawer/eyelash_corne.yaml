@@ -156,8 +156,8 @@ layers:
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - HOME
-  - PgUp
   - PgDn
+  - PgUp
   - END
   - Ins
   - $$mdi:backspace-reverse-outline$$
