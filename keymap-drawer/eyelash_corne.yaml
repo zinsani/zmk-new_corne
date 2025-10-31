@@ -38,13 +38,13 @@ layers:
   - Ctl+AC DESKTOP SHOW ALL APPLICATIONS
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
-  - M
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - NUMBER_SYMBOL
