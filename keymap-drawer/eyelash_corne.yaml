@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - NUMBER_SYMBOL
