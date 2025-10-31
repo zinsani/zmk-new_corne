@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - Ctl+AC DESKTOP SHOW ALL APPLICATIONS
+  - PLAY PAUSE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
@@ -182,7 +182,7 @@ layers:
   - GLOBE
   - $$mdi:apple-keyboard-caps$$
   - PRINTSCREEN
-  - PLAY PAUSE
+  - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -231,7 +231,7 @@ layers:
   - EP TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
-  - $$mdi:volume-off$$
+  - $$mdi:lock$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB SPD
   - RGB SAD
