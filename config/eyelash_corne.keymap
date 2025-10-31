@@ -79,10 +79,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q  &kp W  &kp E      &kp R         &kp T                                                                       &mmv MOVE_UP                     &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D      &kp F         &kp G                                                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &kp Z  &kp X  &kp C      &kp V         &kp B         &kp LC(C_AC_DESKTOP_SHOW_ALL_APPLICATIONS)                    &mmv MOVE_DOWN                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
-                                       &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT                                                                                                 &kp SPACE  &mo 2  &mo 3
+&kp TAB                  &kp Q  &kp W  &kp E      &kp R               &kp T                                                                       &mmv MOVE_UP                     &kp Y      &kp U               &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D      &kp F               &kp G                                                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H      &kp J               &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT           &kp Z  &kp X  &kp C      &kp V               &kp B         &kp LC(C_AC_DESKTOP_SHOW_ALL_APPLICATIONS)                    &mmv MOVE_DOWN                   &kp N      &mt LEFT_GUI SPACE  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
+                                       &kp LCTRL  &mt LEFT_GUI SPACE  &kp LEFT_ALT                                                                                                 &kp SPACE  &mo 2               &mo 3
             >;
 
             sensor-bindings = <&scroll_encoder>;
