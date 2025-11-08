@@ -45,8 +45,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - NUMBER_SYMBOL
   - FUNC_NAVI
   COLEMAK:
@@ -229,7 +229,7 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:brightness-7$$
   - EP TOG
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: COLEMAK, h: toggle}
   - $$mdi:progress-download$$
   - $$mdi:lock$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
