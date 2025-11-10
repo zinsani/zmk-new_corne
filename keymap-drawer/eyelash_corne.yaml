@@ -42,11 +42,11 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - NUMBER_SYMBOL
   - FUNC_NAVI
   COLEMAK:
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   FUNC_NAVI:
@@ -214,7 +214,7 @@ layers:
   - $$mdi:volume-high$$
   - $$mdi:brightness-5$$
   - '&soft_off'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
@@ -229,7 +229,7 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:brightness-7$$
   - EP TOG
-  - {t: COLEMAK, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - $$mdi:lock$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -247,10 +247,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
 combos:
 - p: [23, 24]
-  k: $$mdi:keyboard-esc$$
+  k: $$mdi:keyboard-space$$
   l: [QWERTY, COLEMAK]
 - p: [37, 38]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY, COLEMAK]
 - p: [31, 32]
   k: {t: COLEMAK, h: toggle}
+- p: [17, 16]
+  k: $$mdi:keyboard-esc$$
