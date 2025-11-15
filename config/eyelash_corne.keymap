@@ -27,6 +27,8 @@
     trigger-period-ms = <16>;
 };
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     behaviors {
         td0: td0 {
@@ -110,7 +112,7 @@
             display-name = "NUMBER_SYMBOL";
             bindings = <
 &kp TILDE  &kp EXCL          &kp AT             &kp HASH      &kp DLLR      &kp PRCNT                               &mmv MOVE_UP                     &kp CARET       &kp AMPS         &kp ASTRK     &kp LPAR      &kp RPAR      &kp PIPE
-&kp GRAVE  &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6    &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp NON_US_BACKSLASH
+&kp GRAVE  &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6    &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSLASH
 &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL     &none         &trans                    &mmv MOVE_DOWN                   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans        &trans        &trans        &trans
                                                 &trans        &trans        &trans                                                                   &kp RSHIFT      &trans           &trans
             >;
