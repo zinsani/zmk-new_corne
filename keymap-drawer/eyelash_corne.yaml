@@ -112,7 +112,7 @@ layers:
   - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', h: LGUI}
   - {t: '2', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '3', h: '$$mdi:apple-keyboard-shift$$'}
@@ -126,13 +126,13 @@ layers:
   - {t: '8', h: '$$mdi:apple-keyboard-shift$$', s: '*'}
   - {t: '9', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '0', h: RGUI, s: )}
-  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - \
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - _
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '[', s: '{'}
@@ -161,7 +161,7 @@ layers:
   - END
   - Ins
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+Gui+$
   - {t: F6, h: LGUI}
   - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F8, h: '$$mdi:apple-keyboard-shift$$'}
