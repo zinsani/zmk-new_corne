@@ -104,10 +104,10 @@
 
         colemak {
             bindings = <
-&trans  &kp Q  &kp W  &kp F   &kp P   &kp G                     &trans          &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp A  &kp R  &kp S   &kp T   &kp D             &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &trans            &trans          &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                      &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &kp Q  &kp W  &kp F   &kp P   &kp G                       &trans          &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
+&trans  &kp A  &kp R  &kp S   &kp T   &kp D               &trans  &trans  &trans  &kp H   &kp N   &kp E      &kp I       &kp O          &trans
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &trans            &trans          &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
+                      &trans  &trans  &tdspace                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -120,7 +120,7 @@
 &trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                &mmv MOVE_UP                     &kp CARET         &kp AMPS           &kp ASTRK  &kp LPAR  &kp RPAR  &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6      &kp N7             &kp N8     &kp N9    &kp N0    &trans
 &trans  &none         &none         &none         &none         &kp BACKSLASH  &trans                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans    &trans    &trans
-                                    &trans        &trans        &trans                                                                    &trans            &trans             &trans
+                                    &trans        &trans        &tdspace                                                                  &trans            &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -129,10 +129,10 @@
         raise_layer {
             display-name = "FUNC_NAVI";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3     &kp F4        &kp F5                                         &mmv MOVE_UP                     &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP                             &kp END    &kp BACKSPACE  &trans
-&trans  &kp F6   &kp F7   &kp F8     &kp F9        &kp F10                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN       &kp UP_ARROW                            &kp RIGHT  &kp DELETE     &trans
-&trans  &kp F11  &kp F12  &kp GLOBE  &kp CAPSLOCK  &kp PRINTSCREEN  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &tog 1         &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none      &kp INS        &kp C_AC_SEARCH
-                          &trans     &trans        &none                                                                           &trans    &trans         &trans
+&trans  &kp F1   &kp F2   &kp F3     &kp F4        &kp F5                                         &mmv MOVE_UP                     &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP                             &kp END          &kp BACKSPACE  &trans
+&trans  &kp F6   &kp F7   &kp F8     &kp F9        &kp F10                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN       &kp UP_ARROW                            &kp RIGHT        &kp DELETE     &trans
+&trans  &kp F11  &kp F12  &kp GLOBE  &kp CAPSLOCK  &kp PRINTSCREEN  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &tog 1         &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_AC_SEARCH  &kp INS        &trans
+                          &trans     &trans        &tdspace                                                                        &trans    &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
