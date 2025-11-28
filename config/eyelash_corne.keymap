@@ -117,10 +117,10 @@
         lower_layer {
             display-name = "NUMBER_SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                &mmv MOVE_UP                     &kp CARET         &kp AMPS           &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6      &kp N7             &kp N8     &kp N9    &kp N0    &trans
-&trans  &none         &none         &none         &none         &kp BACKSLASH  &trans                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans    &trans    &trans
-                                    &trans        &trans        &tdspace                                                                  &trans            &trans             &trans
+&trans  &kp EXCL      &kp AT        &kp HASH        &kp DLLR         &kp PRCNT                                &mmv MOVE_UP                     &kp CARET         &kp AMPS           &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6      &kp N7             &kp N8     &kp N9    &kp N0    &trans
+&trans  &none         &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &trans                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans    &trans    &trans
+                                    &trans          &trans           &tdspace                                                                  &trans            &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
