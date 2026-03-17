@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
   - NUMBER_SYMBOL
   - $$mdi:keyboard-space$$
